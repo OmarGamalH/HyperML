@@ -99,3 +99,4 @@ def load_model(filename):
     with open(f"{filename}.pkl" , "rb") as f:
         saved_model = pk.load(f)
     return saved_model
+
