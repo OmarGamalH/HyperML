@@ -68,8 +68,9 @@ The dataset contains the following features:
 
 ### 4. Model Training
 
-Two models are trained: - Custom Logistic Regression (implemented from
-scratch) - Scikit-learn Logistic Regression
+Two models are trained: 
+- Custom Logistic Regression (implemented from scratch)
+- Scikit-learn Logistic Regression
 
 ### 5. Evaluation
 
