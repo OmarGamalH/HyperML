@@ -87,7 +87,22 @@ def transform(df):
         df_f_v_5.gender = df_f_v_5.gender.apply(lambda row : 1 if row == 1.0 else 0)
         df_f_v_6 = df_f_v_5.loc[(df_f_v_5.had_diabetes == 1.0)|(df_f_v_5.had_diabetes == 2.0)]
         df_f_v_6.had_diabetes = df_f_v_6.had_diabetes.apply(lambda row : 1 if row == 1.0 else 0)
-        df_f_v_final = df_f_v_6.rename(columns = {"had_hypertension" : "target"})
+        df_f_v_7 = df_f_v_6.rename(columns = {"had_hypertension" : "target"})
+        min_target = df_f_v_7.groupby('target').count().gender.min()
+        class_1 = df_f_v_7.loc[df_f_v_7.target == 1].iloc[:min_target]
+        class_0 = df_f_v_7.loc[df_f_v_7.target == 0].iloc[:min_target]
+        df_f_v_final = pd.concat([class_1 , class_0]).astype("float")
+        
+        cols = df_f_v_final.columns[1:]
+        for col in cols:
+            mean_value = df_f_v_final.loc[: , col].mean()
+            max_value = df_f_v_final.loc[: , col].max()
+            min_value = df_f_v_final.loc[: , col].min()
+            result = (df_f_v_final.loc[: , col] - np.array(mean_value))/(np.array(max_value) - np.array(min_value))
+            df_f_v_final.loc[: , col] = result
+
+
+
         X = df_f_v_final.iloc[: , 1:]
         Y = df_f_v_final.iloc[: , 0]
         logger.info("The has been processed successfully")
