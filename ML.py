@@ -100,3 +100,14 @@ def load_model(filename):
         saved_model = pk.load(f)
     return saved_model
 
+
+def complex_matrix(y_true , y_pred , num_classes = 2):
+    matrix = np.zeros(shape = (num_classes , num_classes))
+    y_true = list(y_true)
+    y_pred = list(y_pred)
+    for i in range(len(y_true)):
+        actual = y_true[i]
+        predicted = y_pred[i] 
+        matrix[int(actual)][int(predicted)] += 1
+    
+    return matrix
