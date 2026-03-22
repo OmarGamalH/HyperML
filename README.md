@@ -1,4 +1,4 @@
-# Hypertension Prediction Project
+# HyperML
 
 ## Overview
 
