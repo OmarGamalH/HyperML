@@ -2,9 +2,12 @@
 
 ## 📌 Overview
 
-This project is a complete end-to-end data pipeline that covers: - Data
-Extraction - Data Transformation - Data Loading (ETL) - Machine Learning
-Modeling - Model Evaluation & Visualization
+This project is a complete end-to-end data pipeline that covers: 
+- Data Extraction
+- Data Transformation
+- Data Loading (ETL)
+- Machine Learning Modeling
+- Model Evaluation & Visualization
 
 The system processes raw health datasets, prepares them for analysis,
 and applies machine learning models including Logistic Regression and a
@@ -73,8 +76,23 @@ custom Neural Network.
 
 ## 📊 Evaluation
 
-The models are evaluated using: - Accuracy Score - Confusion Matrix -
-Visualization plots: - Cost vs Iterations - Model Accuracy Comparison
+The models are evaluated using: 
+
+<img width="500" height="1000" alt="Image" src="https://github.com/user-attachments/assets/fac2d194-6ff0-4f4f-9808-45999cbbcd72" />
+
+<img width="500" height="1000" alt="Image" src="https://github.com/user-attachments/assets/684feea5-9f06-4a5b-ac87-8a7e23216e7e" />
+
+---
+
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/1190c598-8659-4fd2-ae8d-243e6740610b" />
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/88ca9584-0290-4a93-a09b-e5f8ab70b4ad" />
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/d47f055a-e38e-47a5-87cc-b7f41278331b" />
+
+---
+
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/fd588791-210f-42f9-993e-1b3c41fe0ec8" />
+
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/52d5f189-3c55-4eda-af31-978a3f1d9ad8" />
 
 ------------------------------------------------------------------------
 
