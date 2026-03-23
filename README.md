@@ -1,138 +1,127 @@
-# HyperML
+# 🧠 Data Engineering & Machine Learning Pipeline
 
-## Overview
+## 📌 Overview
 
-This project focuses on predicting hypertension using a machine learning
-pipeline built from scratch and with Scikit-learn for comparison. It
-demonstrates a complete data engineering and modeling workflow,
-including data extraction, transformation, loading (ETL), model
-training, evaluation, and visualization.
+This project is a complete end-to-end data pipeline that covers: - Data
+Extraction - Data Transformation - Data Loading (ETL) - Machine Learning
+Modeling - Model Evaluation & Visualization
 
-------------------------------------------------------------------------
-
-## Dataset Description
-
-The dataset contains the following features:
-
--   **gender**: Binary encoded gender (0 = Female, 1 = Male)
--   **age_at_years**: Age of the individual
--   **Body_Mass_Index (BMI)**: Body mass index
--   **Frequency_of_moderate_LTPA**: Frequency of moderate leisure-time
-    physical activity
--   **had_diabetes**: Diabetes status (0 = No, 1 = Yes)
--   \*\*Sodium\_(mg)\_perday\*\*: Daily sodium intake
-
-### Target Variable
-
--   **target**: Hypertension status (0 = No, 1 = Yes)
+The system processes raw health datasets, prepares them for analysis,
+and applies machine learning models including Logistic Regression and a
+custom Neural Network.
 
 ------------------------------------------------------------------------
 
-## Project Structure
+## ⚙️ Project Structure
 
-    ├── datasets/              # Raw XPT datasets
-    ├── datasets_csv/          # Converted CSV datasets
-    ├── bronze/                # Joined raw data
-    ├── silver/                # Processed dataset
-    ├── gold/                  # Final features (X) and labels (Y)
-    ├── graphs/                # Generated plots
-    ├── models/                # Saved models
-    ├── DE_Utilities.py        # Data engineering utilities (ETL)
-    ├── ML.py                  # Custom ML implementation
-    ├── main.py                # Pipeline entry point
-    └── README.md
+    .
+    ├── DE_Utilities.py     # Data Engineering utilities (ETL)
+    ├── ML.py               # Machine Learning models & utilities
+    ├── main.py             # Main pipeline execution
+    ├── datasets/           # Raw data (input)
+    ├── datasets_csv/       # Converted CSV files
+    ├── bronze/             # Joined raw dataset
+    ├── silver/             # Processed dataset
+    ├── gold/               # Features & labels
+    ├── models/             # Saved models
+    ├── graphs/             # Visualizations
 
 ------------------------------------------------------------------------
 
-## Pipeline Workflow
+## 🔄 Pipeline Workflow
 
 ### 1. Data Extraction
 
 -   Converts `.xpt` files into `.csv`
--   Merges datasets using a common key
+-   Loads datasets into Pandas DataFrames
 
-### 2. Data Transformation
+### 2. Data Integration
 
--   Selects relevant features
--   Handles missing values
--   Encodes categorical variables
--   Normalizes numerical features
--   Balances dataset classes
+-   Joins multiple datasets into a unified dataset
 
-### 3. Data Loading
+### 3. Data Transformation
 
--   Stores processed datasets into structured layers:
-    -   Bronze (raw merged)
-    -   Silver (cleaned)
-    -   Gold (final ML-ready)
+-   Feature selection & renaming
+-   Handling missing values
+-   Encoding categorical variables
+-   Normalization
+-   Class balancing
 
-### 4. Model Training
+### 4. Data Loading
 
-Two models are trained: 
-- Custom Logistic Regression (implemented from scratch)
-- Scikit-learn Logistic Regression
-
-### 5. Evaluation
-
--   Accuracy comparison between both models
--   Visualization:
-    -   Cost vs Iterations
-    -   Model Accuracy Comparison
-
-<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/8b9ea230-08ae-4dcc-a134-2f10e237823b" />
-<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/cbab3a16-f3f3-4a41-9e2d-65ef1c07b625" />
-<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/4ecb74c1-4cc7-4bc6-8756-d602dafd057b" />
+-   Saves processed datasets into structured layers:
+    -   **Bronze** (raw merged)
+    -   **Silver** (cleaned)
+    -   **Gold** (features & labels)
 
 ------------------------------------------------------------------------
 
-## How to Run
+## 🤖 Machine Learning Models
 
-### Requirements
+### 1. Logistic Regression
 
-Install dependencies:
+-   Custom implementation using gradient descent
+-   Compared against Scikit-learn implementation
 
-    pip install numpy pandas matplotlib scikit-learn pyreadstat
+### 2. Neural Network
 
-### Run the Pipeline
-
-    python main.py
-
-------------------------------------------------------------------------
-
-## Outputs
-
--   **Processed Data**:
-    -   `silver/processed.csv`
-    -   `gold/X.csv`
-    -   `gold/Y.csv`
--   **Models**:
-    -   `models/sklearn_model.pkl`
-    -   `models/my_model.pkl`
--   **Visualizations**:
-    -   `graphs/costs_figure.png`
-    -   `graphs/accuracy_figure.png`
+-   Fully connected deep neural network
+-   Supports multiple hidden layers
+-   Implements forward & backward propagation from scratch
 
 ------------------------------------------------------------------------
 
-## Key Features
+## 📊 Evaluation
 
--   End-to-end ML pipeline
--   Custom implementation of logistic regression
--   Data balancing and normalization
--   Modular ETL design
--   Model comparison and visualization
+The models are evaluated using: - Accuracy Score - Confusion Matrix -
+Visualization plots: - Cost vs Iterations - Model Accuracy Comparison
 
 ------------------------------------------------------------------------
 
-## Future Improvements
+## 🚀 How to Run
 
--   Hyperparameter tuning with cross-validation
--   Additional evaluation metrics (Precision, Recall, F1-score)
--   Deployment as an API
--   Feature importance analysis
+### 1. Install Dependencies
+
+``` bash
+pip install numpy pandas matplotlib seaborn scikit-learn pyreadstat
+```
+
+### 2. Run the Pipeline
+
+``` bash
+python main.py
+```
 
 ------------------------------------------------------------------------
 
-## Author
+## 📈 Outputs
 
-Omar Gamal
+-   Processed datasets (`silver/`, `gold/`)
+-   Trained models (`models/`)
+-   Performance plots (`graphs/`)
+
+------------------------------------------------------------------------
+
+## ⚠️ Notes & Improvements
+
+-   Avoid data leakage by applying normalization after train-test split
+-   Add more evaluation metrics (Precision, Recall, F1-score)
+-   Improve scalability of dataset merging
+-   Add model persistence for preprocessing steps
+
+------------------------------------------------------------------------
+
+## 🧩 Future Enhancements
+
+-   Convert pipeline into a reusable package
+-   Add API deployment (FastAPI / Flask)
+-   Implement hyperparameter tuning
+-   Add cross-validation
+-   Improve logging & monitoring
+
+------------------------------------------------------------------------
+
+## 👨‍💻 Author
+
+Omar Gamal Hamed
+---------------------------------------------------------------------
