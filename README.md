@@ -1,4 +1,4 @@
-# Hypertension Prediction Project
+# HyperML
 
 ## Overview
 
@@ -68,8 +68,9 @@ The dataset contains the following features:
 
 ### 4. Model Training
 
-Two models are trained: - Custom Logistic Regression (implemented from
-scratch) - Scikit-learn Logistic Regression
+Two models are trained: 
+- Custom Logistic Regression (implemented from scratch)
+- Scikit-learn Logistic Regression
 
 ### 5. Evaluation
 
@@ -77,6 +78,10 @@ scratch) - Scikit-learn Logistic Regression
 -   Visualization:
     -   Cost vs Iterations
     -   Model Accuracy Comparison
+
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/8b9ea230-08ae-4dcc-a134-2f10e237823b" />
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/cbab3a16-f3f3-4a41-9e2d-65ef1c07b625" />
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/4ecb74c1-4cc7-4bc6-8756-d602dafd057b" />
 
 ------------------------------------------------------------------------
 
