@@ -15,10 +15,9 @@ def main():
     DE.join_datasets("datasets_csv" , output_dir = "bronze" , first_file="ACQ_L.csv" , join_on='SEQN')
 
     DF = DE.extract_csv("bronze/final_data.csv")
-    final_df , X , Y = DE.transform(DF)
+    final_df , X , Y , X_train , X_test , Y_train , Y_test = DE.transform(DF)
     DE.load(("silver/processed.csv" , "gold/X.csv" , "gold/Y.csv") , (final_df , X , Y))
     
-    X_train , X_test , Y_train , Y_test = ms.train_test_split(X.to_numpy() , Y.to_numpy() , test_size=0.2 , random_state=42 )
 
     sklearn_model = linear.LogisticRegression(max_iter= 20000)
     my_model = Logistic_regression_model(X_train , Y_train , 0.1 , 20000)

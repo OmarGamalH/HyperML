@@ -3,6 +3,7 @@ import pandas as pd
 import os
 import pyreadstat as prs
 import logging as l
+import sklearn.model_selection as ms
 base_dir = os.getcwd()
 dataset_dir = os.path.join(base_dir , "dataset")
 
@@ -71,7 +72,7 @@ def join_datasets(input_dir , output_dir , first_file , join_on):
     final_df.to_csv(full_output_path)
 
 
-def transform(df):
+def transform(df , test_size = .2):
     try:
         logger.info("The data is being processed...")
         required_cols = ['BPQ020' , 'RIAGENDR' , "RIDAGEYR"  , "BMXBMI", "PAD790Q" , "DIQ010" , "DR1TSODI" ] 
@@ -93,20 +94,25 @@ def transform(df):
         class_0 = df_f_v_7.loc[df_f_v_7.target == 0].iloc[:min_target]
         df_f_v_final = pd.concat([class_1 , class_0]).astype("float")
         
+
         cols = df_f_v_final.columns[1:]
-        for col in cols:
-            mean_value = df_f_v_final.loc[: , col].mean()
-            max_value = df_f_v_final.loc[: , col].max()
-            min_value = df_f_v_final.loc[: , col].min()
-            result = (df_f_v_final.loc[: , col] - np.array(mean_value))/(np.array(max_value) - np.array(min_value))
-            df_f_v_final.loc[: , col] = result
-
-
 
         X = df_f_v_final.iloc[: , 1:]
         Y = df_f_v_final.iloc[: , 0]
+        X_train , X_test , Y_train , Y_test = ms.train_test_split(X , Y , test_size = test_size, random_state=42 )
+
+
+        for col in cols:
+            mean_value = X_train.loc[: , col].mean()
+            max_value = X_train.loc[: , col].max()
+            min_value = X_train.loc[: , col].min()
+            result_train = (X_train.loc[: , col] - np.array(mean_value))/(np.array(max_value) - np.array(min_value))
+            result_test  = (X_test.loc[: , col] - np.array(mean_value))/(np.array(max_value) - np.array(min_value))
+            X_train.loc[: , col] = result_train
+            X_test.loc[: , col] = result_test
+
         logger.info("The has been processed successfully")
-        return df_f_v_final , X , Y
+        return df_f_v_final , X , Y , X_train.to_numpy() , X_test.to_numpy() , Y_train.to_numpy() , Y_test.to_numpy()
     except Exception as e:
         logger.error("The data hasn't been processed successfully")
         return None , None , None
