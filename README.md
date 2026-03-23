@@ -131,9 +131,3 @@ Install dependencies:
 ## Author
 
 Omar Gamal
-
-------------------------------------------------------------------------
-
-## License
-
-This project is for educational purposes.

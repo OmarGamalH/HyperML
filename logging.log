@@ -569,3 +569,99 @@
 2026-03-22 02:41:31,413-INFO-The has been processed successfully
 2026-03-22 02:41:31,413-INFO-The data is being loaded to destinations
 2026-03-22 02:41:31,556-INFO-The data has been loaded to destinations successfully
+2026-03-23 23:38:51,623-WARNING-file:DSBI.csv was not processed due to error :'SEQN'
+2026-03-23 23:38:51,661-WARNING-file:DSPI.csv was not processed due to error :'SEQN'
+2026-03-23 23:38:51,750-WARNING-file:IHGEM_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:51,864-WARNING-file:HDL_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:51,898-WARNING-file:TST_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:51,923-WARNING-file:CBC_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:51,933-WARNING-file:HEPE_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:51,938-WARNING-file:TCHOL_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:51,957-WARNING-file:BIOPRO_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:52,019-WARNING-file:HSCRP_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:52,030-WARNING-file:PBCD_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:52,054-WARNING-file:FAR_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:52,087-WARNING-file:FOLFMS_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:52,095-WARNING-file:VID_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:52,111-WARNING-file:GHB_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:52,314-WARNING-file:DSII.csv was not processed due to error :'SEQN'
+2026-03-23 23:38:52,888-WARNING-file:DR1IFF_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTDRD1_x', 'WTDRD1_y'} is not allowed.
+2026-03-23 23:38:53,258-WARNING-file:DR2IFF_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTDRD1_x', 'WTDRD1_y'} is not allowed.
+2026-03-23 23:38:53,270-WARNING-file:AGP_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:53,292-WARNING-file:FERTIN_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:53,297-WARNING-file:TFR_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:53,318-WARNING-file:FOLATE_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:53,334-WARNING-file:HEPC_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:53,345-WARNING-file:FFMR_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:38:53,369-WARNING-file:DSQIDS_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTDRD1_x', 'WTDRD1_y'} is not allowed.
+2026-03-23 23:38:53,375-WARNING-file:DRXFCD_L.csv was not processed due to error :'SEQN'
+2026-03-23 23:38:57,109-INFO-File:bronze/final_data.csv is being extracted...
+2026-03-23 23:38:57,475-INFO-File:bronze/final_data.csv was extracted successfully
+2026-03-23 23:38:57,475-INFO-The data is being processed...
+2026-03-23 23:38:57,489-INFO-The has been processed successfully
+2026-03-23 23:38:57,489-INFO-The data is being loaded to destinations
+2026-03-23 23:38:57,583-INFO-The data has been loaded to destinations successfully
+2026-03-23 23:53:34,779-WARNING-file:DSBI.csv was not processed due to error :'SEQN'
+2026-03-23 23:53:34,808-WARNING-file:DSPI.csv was not processed due to error :'SEQN'
+2026-03-23 23:53:34,880-WARNING-file:IHGEM_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:34,969-WARNING-file:HDL_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:34,998-WARNING-file:TST_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:35,019-WARNING-file:CBC_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:35,029-WARNING-file:HEPE_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:35,034-WARNING-file:TCHOL_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:35,049-WARNING-file:BIOPRO_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:35,101-WARNING-file:HSCRP_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:35,109-WARNING-file:PBCD_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:35,130-WARNING-file:FAR_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:35,156-WARNING-file:FOLFMS_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:35,163-WARNING-file:VID_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:35,176-WARNING-file:GHB_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:35,340-WARNING-file:DSII.csv was not processed due to error :'SEQN'
+2026-03-23 23:53:35,837-WARNING-file:DR1IFF_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTDRD1_x', 'WTDRD1_y'} is not allowed.
+2026-03-23 23:53:36,143-WARNING-file:DR2IFF_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTDRD1_x', 'WTDRD1_y'} is not allowed.
+2026-03-23 23:53:36,153-WARNING-file:AGP_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:36,172-WARNING-file:FERTIN_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:36,176-WARNING-file:TFR_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:36,193-WARNING-file:FOLATE_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:36,207-WARNING-file:HEPC_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:36,216-WARNING-file:FFMR_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_y', 'WTPH2YR_x'} is not allowed.
+2026-03-23 23:53:36,240-WARNING-file:DSQIDS_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTDRD1_x', 'WTDRD1_y'} is not allowed.
+2026-03-23 23:53:36,245-WARNING-file:DRXFCD_L.csv was not processed due to error :'SEQN'
+2026-03-23 23:53:39,467-INFO-File:bronze/final_data.csv is being extracted...
+2026-03-23 23:53:39,781-INFO-File:bronze/final_data.csv was extracted successfully
+2026-03-23 23:53:39,782-INFO-The data is being processed...
+2026-03-23 23:53:39,798-INFO-The has been processed successfully
+2026-03-23 23:53:39,798-INFO-The data is being loaded to destinations
+2026-03-23 23:53:39,874-INFO-The data has been loaded to destinations successfully
+2026-03-23 23:59:34,703-WARNING-file:DSBI.csv was not processed due to error :'SEQN'
+2026-03-23 23:59:34,742-WARNING-file:DSPI.csv was not processed due to error :'SEQN'
+2026-03-23 23:59:34,837-WARNING-file:IHGEM_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:34,970-WARNING-file:HDL_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:35,017-WARNING-file:TST_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:35,049-WARNING-file:CBC_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:35,073-WARNING-file:HEPE_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:35,083-WARNING-file:TCHOL_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:35,106-WARNING-file:BIOPRO_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:35,174-WARNING-file:HSCRP_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:35,186-WARNING-file:PBCD_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:35,213-WARNING-file:FAR_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:35,257-WARNING-file:FOLFMS_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:35,269-WARNING-file:VID_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:35,290-WARNING-file:GHB_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:35,527-WARNING-file:DSII.csv was not processed due to error :'SEQN'
+2026-03-23 23:59:36,196-WARNING-file:DR1IFF_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTDRD1_y', 'WTDRD1_x'} is not allowed.
+2026-03-23 23:59:36,626-WARNING-file:DR2IFF_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTDRD1_y', 'WTDRD1_x'} is not allowed.
+2026-03-23 23:59:36,639-WARNING-file:AGP_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:36,663-WARNING-file:FERTIN_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:36,669-WARNING-file:TFR_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:36,693-WARNING-file:FOLATE_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:36,711-WARNING-file:HEPC_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:36,723-WARNING-file:FFMR_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTPH2YR_x', 'WTPH2YR_y'} is not allowed.
+2026-03-23 23:59:36,757-WARNING-file:DSQIDS_L.csv was not processed due to error :Passing 'suffixes' which cause duplicate columns {'WTDRD1_y', 'WTDRD1_x'} is not allowed.
+2026-03-23 23:59:36,765-WARNING-file:DRXFCD_L.csv was not processed due to error :'SEQN'
+2026-03-23 23:59:41,652-INFO-File:bronze/final_data.csv is being extracted...
+2026-03-23 23:59:42,301-INFO-File:bronze/final_data.csv was extracted successfully
+2026-03-23 23:59:42,301-INFO-The data is being processed...
+2026-03-23 23:59:42,316-INFO-The has been processed successfully
+2026-03-23 23:59:42,316-INFO-The data is being loaded to destinations
+2026-03-23 23:59:42,416-INFO-The data has been loaded to destinations successfully

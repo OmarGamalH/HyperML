@@ -6,7 +6,7 @@ import DE_Utilities as DE
 import sklearn.metrics as m
 import sklearn.model_selection as ms
 import sklearn.linear_model as linear
-from ML import Logistic_regression_model , plot_costs , plot_accuracies , save_model
+from ML import Logistic_regression_model , plot_costs , plot_accuracies , save_model , NN_Model , complex_matrix , save_heatmap
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
 
@@ -39,8 +39,19 @@ def main():
     save_model(sklearn_model , "sklearn_model")
     save_model(my_model , "my_model")
 
-
-
+    my_NN_model = NN_Model(X_train , Y_train ,  .1 , 10000 , layers_dims=[4 , 4 , 4])
+    my_NN_model.fit()
+    yhat_my_NN = my_NN_model.predict(X_test)
+    my_NN_accuracy = accuracy_score(Y_test , yhat_my_NN)
+    plot_accuracies(sk_accuracy , my_NN_accuracy , filename = 'NN_accuracy' , name_1 = "sklearn_accuracy" , name_2 = 'my_NN_model')
+    save_model(my_NN_model , "my_NN_model")
+    sk_cm = complex_matrix(Y_test , yhat_sk_model)
+    my_cm = complex_matrix(Y_test , yhat_my_model)
+    my_NN_cm = complex_matrix(Y_test , yhat_my_NN)
+    save_heatmap(sk_cm , "sklean_complexMatrix" , "sklean_complexMatrix")
+    save_heatmap(my_cm , "my_complexMatrix" , "my_complexMatrix")
+    save_heatmap(my_NN_cm , "my_NN_complexMatrix" , "my_NN_complexMatrix")
+    
 
 if __name__ == "__main__":
 
