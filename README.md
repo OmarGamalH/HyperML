@@ -84,9 +84,9 @@ The models are evaluated using:
 
 ---
 
-<img width="500" height="480" alt="Image" src="https://github.com/user-attachments/assets/1190c598-8659-4fd2-ae8d-243e6740610b" />
-<img width="500" height="480" alt="Image" src="https://github.com/user-attachments/assets/88ca9584-0290-4a93-a09b-e5f8ab70b4ad" />
-<img width="750" height="750" alt="Image" src="https://github.com/user-attachments/assets/d47f055a-e38e-47a5-87cc-b7f41278331b" />
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/1190c598-8659-4fd2-ae8d-243e6740610b" />
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/88ca9584-0290-4a93-a09b-e5f8ab70b4ad" />
+<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/d47f055a-e38e-47a5-87cc-b7f41278331b" />
 
 ---
 
