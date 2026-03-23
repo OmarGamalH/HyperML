@@ -2,9 +2,12 @@
 
 ## 📌 Overview
 
-This project is a complete end-to-end data pipeline that covers: - Data
-Extraction - Data Transformation - Data Loading (ETL) - Machine Learning
-Modeling - Model Evaluation & Visualization
+This project is a complete end-to-end data pipeline that covers: 
+- Data Extraction
+- Data Transformation
+- Data Loading (ETL)
+- Machine Learning Modeling
+- Model Evaluation & Visualization
 
 The system processes raw health datasets, prepares them for analysis,
 and applies machine learning models including Logistic Regression and a
