@@ -122,7 +122,6 @@ python main.py
 
 ## ⚠️ Notes & Improvements
 
--   Avoid data leakage by applying normalization after train-test split
 -   Add more evaluation metrics (Precision, Recall, F1-score)
 -   Improve scalability of dataset merging
 -   Add model persistence for preprocessing steps
